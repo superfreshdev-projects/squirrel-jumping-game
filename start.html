@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eichhörnchen Running Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Eichhörnchen — Running Game</h1>
+    <div class="controls">
+      <button id="startBtn">Start</button>
+      <button id="restartBtn" disabled>Restart</button>
+      <div class="info">Springen: <strong>Leertaste</strong></div>
+    </div>
+
+    <div class="game-area">
+      <canvas id="gameCanvas" width="900" height="320"></canvas>
+      <div id="overlay" class="overlay hidden">
+        <div class="overlay-content">
+          <h2 id="overlayTitle">Game Over</h2>
+          <p id="overlayMsg"></p>
+          <button id="overlayRestart">Noch einmal</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="hud">
+      <span>Score: <span id="score">0</span></span>
+      <span>Hindernisse: <span id="passed">0</span></span>
+      <span>Speed: <span id="speedDisplay">1.0</span>x</span>
+    </div>
+
+    <footer>Viel Spaß! (Leertaste zum Springen)</footer>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
