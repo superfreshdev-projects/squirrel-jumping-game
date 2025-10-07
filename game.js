@@ -58,6 +58,14 @@
     }
   });
 
+  // touch / click
+   window.addEventListener('click', (e) => {
+
+      // e.preventDefault();
+      jump();
+
+  });
+
   startBtn.addEventListener('click', () => {
     startBtn.disabled = true;
     restartBtn.disabled = false;
